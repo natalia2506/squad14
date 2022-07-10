@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/CSS" href="./CSS/estilo.css">
 
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 
 </head>
 <body id="corPrincipal">
@@ -20,9 +24,9 @@
     </button>
   
     <div class="collapse navbar-collapse" id="conteudoNavbarSuportado" >
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav mr-auto" >
 
-        <li class="nav-item px-2">
+        <li class="nav-item px-2" >
           <a class="nav-link" href="index.html">Home</a>
         </li>
 
@@ -50,10 +54,148 @@
 <!-- Fim do Menu-->
 
 <!--Início do formulário do cadastro das Escolas-->
-  <h5 class="about-title">Cadastre a Escola</h5>
+<h5 class="about-title">Cadastre sua Escola</h5>
+<main class="row g-3  p-5">
 
-<br>
-<br>
+  <form class="row g-1  p-5">
+      <div class="col-md-6">
+          <label for="inputName" class="form-label">Nome da escola</label>
+          <input type="text" class="form-control" id="inputName" placeholder="Digite Razão Social" required>
+      </div>
+      <div class="col-md-6">
+          <label for="inputNumber" class="form-label">CNPJ ou Registro da Escola</label>
+          <input type="number" class="form-control" id="inputNumber" placeholder="Digite CNPJ" required>
+      </div>
+      <div class="col-md-8">
+          <label for="inputAddress" class="form-label">Endereço da escola </label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="" required>
+      </div>
+      <div class="col-md-4">
+          <label for="inputAddress" class="form-label">Número</label>
+          <input type="number" class="form-control" id="inputAddress" placeholder="" required>
+      </div>
+      <div class="col-md-8">
+          <label for="inputAddress" class="form-label">Complemento</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="">
+      </div>
+      <div class="col-md-4">
+          <label for="inputAddress" class="form-label">CEP</label>
+          <input type="number" class="form-control" id="inputAddress" placeholder="" required>
+      </div>
+      <div class="col-md-8">
+          <label for="inputCity" class="form-label">Cidade</label>
+          <input type="text" class="form-control" id="inputCity" placeholder="" required>
+      </div>
+      <div class="col-md-4">
+          <label for="inputState" class="form-label">Estado</label>
+          <select id="inputState" class="form-select" required>
+              <option selected>UF</option>
+              <option>AC</option>
+              <option>AL</option>
+              <option>AM</option>
+              <option>AP</option>
+              <option>BA</option>
+              <option>CE</option>
+              <option>DF</option>
+              <option>ES</option>
+              <option>GO</option>
+              <option>MA</option>
+              <option>MG</option>
+              <option>MS</option>
+              <option>MT</option>
+              <option>PA</option>
+              <option>PB</option>
+              <option>PE</option>
+              <option>PR</option>
+              <option>PI</option>
+              <option>RJ</option>
+              <option>RN</option>
+              <option>RO</option>
+              <option>RR</option>
+              <option>RS</option>
+              <option>SC</option>
+              <option>SE</option>
+              <option>SP</option>
+              <option>TO</option>
+          </select>
+      </div>
+   
+      <div class="col-md-6">
+            <label for="inputName4" class="form-label">Dados do representante da escola - Nome:</label>
+            <input type="text" class="form-control" id="inputName4" placeholder="" required>
+        </div>
+        <div class="col-md-6">
+            <label for="inputFuncao4" class="form-label">Função do representante da escola:</label>
+            <input type="text" class="form-control" id="inputFuncao4" placeholder="" required>
+        </div>
+        <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="" required>
+        </div>
+
+        <div class="col-md-6">
+            <label for="inputZip" class="form-label">Contato</label>
+            <input type="number" class="form-control" id="inputZip">
+        </div>
+        <br><br><br><br>
+        <hr>
+        <br><br><br><br>
+
+        <legend class="col-form-label col-sm-2 pt-0">Queremos muito saber: Como você conheceu o "Projeto Aprender
+            sem Barreiras"?
+        </legend>
+        <div class="col-sm-10">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                    checked>
+                <label class="form-check-label" for="gridRadios1">
+                    Rede Sociais. Qual? Favor responder no próximo item
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                    Amigos
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                <label class="form-check-label" for="gridRadios3">
+                    Televisão
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                <label class="form-check-label" for="gridRadios3">
+                    Site/Pesquisa Google
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                <label class="form-check-label" for="gridRadios3">
+                    Outros. Qual? Favor responder no próximo item.
+                </label>
+            </div>
+        </div>
+       
+      <div class="col-md-12">
+          <label for="inputInform" class="form-label">Detalhe aqui:</label>
+          <input type="text" class="form-control" id="inputInform" placeholder="">
+      </div>
+      <div class="col-12">
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck" required>
+              <label class="form-check-label" for="gridCheck">
+                  Declaro que todas as informações são verdadeiras.
+              </label>
+          </div>
+      </div>
+      <div class="col-12">
+          <button type="submit" class="btn btn-primary">Cadastrar</button>
+      </div>
+  </form>
+
+</main>
 
  <!--Fim do formulário do cadastro das Escolas-->
     
